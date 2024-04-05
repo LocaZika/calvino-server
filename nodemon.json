@@ -1,0 +1,11 @@
+{
+  "exec": "npm run devStart",
+  "watch": [
+    "server/*",
+    "public/*"
+  ],
+  "env": {
+    "PORT": 2207,
+    "URI_MONGODB": "mongodb+srv://locazika:n4mbAVxxy4Uo6WRe@calvino.3lzw55n.mongodb.net/?retryWrites=true&w=majority&appName=calvino"
+  }
+}
