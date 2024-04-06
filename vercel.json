@@ -1,5 +1,5 @@
 {
   "version": 2,
-  "buildCommand": "npm start",
+  "buildCommand": "export NODE_ENV=production&& npm-run-all build server",
 	"rewrites": [{ "source": "/(.*)", "destination": "/dist" }]
 }
