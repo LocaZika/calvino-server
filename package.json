@@ -7,7 +7,7 @@
     "build": "npm-run-all clean transpile",
     "server": "node ./dist/bin/www",
     "devStart": "SET NODE_ENV=development& npm-run-all build server",
-    "prod": "SET NODE_ENV=production& npm-run-all build server",
+    "prod": "npm-run-all build server",
     "transpile": "babel ./server --out-dir dist",
     "clean": "rimraf dist",
     "dev": "nodemon"
