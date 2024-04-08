@@ -6,11 +6,14 @@
           "use": "@vercel/node"
       }
   ],
-  "routes": [
-      {
-          "src": "/(.*)",
-          "dest": "/"
-      }
+  "rewrites": [
+    { "source": "/header", "destination": "/header" },
+    { "source": "/footer", "destination": "/footer" },
+    { "source": "/homePage", "destination": "/homePage" },
+    { "source": "/servicePage", "destination": "/servicePage" },
+    { "source": "/caseStudyPage", "destination": "/case-studyPage" },
+    { "source": "/aboutPage", "destination": "/aboutPage" },
+    { "source": "/contactPage", "destination": "/contactPage" }
   ],
   "cleanUrls": true
 }
